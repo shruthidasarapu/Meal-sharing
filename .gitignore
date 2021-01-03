@@ -31,7 +31,7 @@ jspm_packages/
 
 # dotenv environment variables file
 .env
-
+.env.example
 # add gitignore for .vscode and .vscode/settings.json
 .vscode 
 .vscode/settings.json

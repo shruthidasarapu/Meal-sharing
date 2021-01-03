@@ -26,6 +26,9 @@ router.use("/reservations", reservationsRouter);
 router.use("/reviews", reviewsRouter);
 app.use(process.env.API_PATH, router);
 
+app.listen((port, (()=> { 
+  console.log("app listening to port: 3000")
+})))
 // for the frontend. Will first be covered in the react class
 app.use("*", (req, res) => {
   res.sendFile(path.join(`${buildPath}/index.html`));
